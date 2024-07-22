@@ -1,9 +1,9 @@
 import PocketBase from 'pocketbase';
 
 export const handle = async ({ event, resolve }) => {
-	// event.locals.pb = new PocketBase('http://127.0.0.1:8090');
+	event.locals.pb = new PocketBase('http://127.0.0.1:8090');
 	// event.locals.pb = new PocketBase('https://pb-database.fly.dev/');
-	event.locals.pb = new PocketBase('https://bin-t.pockethost.io/');
+	// event.locals.pb = new PocketBase('https://bin-t.pockethost.io/');
 
 	// load the store data from the request cookie string
 	event.locals.pb.authStore.loadFromCookie(event.request.headers.get('cookie') || '');

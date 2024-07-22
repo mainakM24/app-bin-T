@@ -82,7 +82,7 @@
 			<!-- clock component -->
 			<Clock />
 			<!-- component for displaying the result of last round -->
-			<RoundResult {result} {time} />
+			<!-- <RoundResult {result} {time} /> -->
 		</div>
 
 		<div>
